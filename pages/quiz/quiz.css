@@ -8,6 +8,8 @@
 
 :root {
     --bg-color: #F4F6FA;
+    --bg-span: #F4F6FA;
+    --color-span: #626C7F;
     --purple-: #A729F5;
     --purple-hover: rgba(167, 41, 245, 0.7);
     --primary-text-color: #313E51;
@@ -27,6 +29,7 @@
 
 body.escuro {
     --bg-color: #313E51;
+    --color-span: #313E51;
     --bg-mobile: url(../../assets/images/pattern-background-mobile-dark.svg);
     --bg-desktop: url(../../assets/images/pattern-background-desktop-dark.svg);
     --primary-text-color: #FFF;
@@ -202,9 +205,9 @@ alternativas label:has(input:checked) {
     display: block;
     width: 40px;
     height: 40px;
-    background: var(--bg-color);
+    background: var(--bg-span);
     border-radius: 5px;
-    color: var(--secondary-text-color);
+    color: var(--color-span);
 
     display: flex;
     align-items: center;
