@@ -15,34 +15,8 @@ botoesAssunto.forEach(botao => {
 })
 
 function selecionarAssunto (evento) {
-    const assunto = evento.target.innerText
+    const classeBotao = evento.target.className
+    const assunto = document.querySelector(`.${classeBotao} span`).innerText
     localStorage.setItem("assunto", assunto)
     window.location.href = "./pages/quiz/quiz.html"
 }
-
-function verificarTema(body, botaoTema) {
-    if (localStorage.getItem("tema")){
-        tema = localStorage.getItem("tema")
-    }
-
-    if (tema === "claro") {
-        body.classList.add("escuro")
-        localStorage.setItem("tema", "escuro")
-
-    } else {
-        body.classList.remove("escuro")
-        localStorage.setItem("tema", "claro" )
-    }
-}
-
-function verificarTema() {
-    if (localStorage.getItem("tema")) {
-        tema= localStorage.getItem("tema")
-    }
-
-    if (tema === "escuro") {
-        body.classList.add("escuro")
-    }
-}
-
-verificarTema()

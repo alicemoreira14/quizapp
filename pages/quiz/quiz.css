@@ -156,6 +156,7 @@ main {
     border-radius: 999px;
 }
 
+
 .alternativas form {
     display: flex;
     flex-direction: column;
@@ -182,7 +183,7 @@ main {
     }
 }
 
-alternativas label:has(input:checked) {
+.alternativas label:has(input:checked) {
     outline: 3px solid var(--purple-);
 
     & span {
@@ -256,7 +257,7 @@ alternativas label:has(input:checked) {
         background-size: cover;
         background-repeat: no-repeat;
     }
-    
+
     header {
         margin-block: 81px;
         max-width: 1160px;
@@ -272,7 +273,8 @@ alternativas label:has(input:checked) {
     .assunto h1 {
         font-size: 28px;
     }
-
+    
+    
     .tema {
         gap: 16px;
     }
